@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
+:root{
+    --green:#73926C;
+    --blue:#8CE0EB;
+    --skin:#D2CCB1;
+    --pink:#EDA909;
+    --white:#fff;
+    --black:#222;
+    --border:.2rem solid var(--green);
+}
+*{
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+*::selection{
+    background-color: var(--green);
+    color: var(--black);
+}
+::-weblit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+::-weblit-scrollbar-track{
+    background-color: transparent;
+}
+::-weblit-scrollbar-thumb{
+    background-color: var(--skin);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    stroke-opacity: 7rem;
+}
+section{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+
+}
+.header
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--pink);
+    border-bottom: var(--border);
+}
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.header .flex .logo{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.header .flex .navbar a{
+    font-size: 2rem;
+    color: var(--white);
+    margin: 0 1rem;
+}
+.header .flex .navbar a:hover{
+    color: var(--black);
+    text-decoration: underline;
+
+}
+.header .flex .icons > *{
+    margin-left: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+.header .flex .icons > *:hover{
+    color: var(--black);
+}
+.header .flex .icons span{
+    font-size: 2rem;
+    /* color: var(--skin); */
+}
